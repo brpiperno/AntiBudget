@@ -86,9 +86,4 @@ public class Utils {
     public static boolean dateWithinRange(LocalDateTime d, LocalDateTime s, LocalDateTime e){
         return (!d.isAfter(e) && !d.isBefore(s));
     }
-
-    public static Float interpolate(LocalDateTime second, Float aFloat2,
-                                    LocalDateTime first, Float aFloat1, LocalDateTime current) {
-
-    }
 }

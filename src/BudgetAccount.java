@@ -1,6 +1,7 @@
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
+import 
 
 public class BudgetAccount implements IBudgetAccount{
     String name;
@@ -8,6 +9,7 @@ public class BudgetAccount implements IBudgetAccount{
     float estInterest = 0;
     SortedMap<LocalDateTime, Float> actualValues;
     ArrayList<ITransaction> transactions;
+    PolynomialSplineFunction
 
     public BudgetAccount(String name, String description, float interest) {
         this.name = name;
@@ -168,7 +170,7 @@ public class BudgetAccount implements IBudgetAccount{
     }
 
     @Override
-    public float calculateRateOfReturn(LocalDateTime start, LocalDateTime end, boolean includeInflation) {
+    public float rateOfReturn(LocalDateTime start, LocalDateTime end, boolean includeInflation) {
         return 0;
     }
 

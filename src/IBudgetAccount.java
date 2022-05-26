@@ -176,13 +176,5 @@ public interface IBudgetAccount {
      * @return the Nominal or Real rate of return for the account in the given time period.
      * @throws IllegalArgumentException if the starting value is after the ending date.
      */
-    float calculateRateOfReturn(LocalDateTime start, LocalDateTime end, boolean includeInflation);
-
-    /**
-     * See if if
-     * @param d
-     * @param direction
-     * @return
-     */
-    boolean hasNeighborValue(LocalDateTime d, boolean direction);
+    float rateOfReturn(LocalDateTime start, LocalDateTime end, boolean includeInflation);
 }
